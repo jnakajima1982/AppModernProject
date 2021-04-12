@@ -1,4 +1,3 @@
-# AppModernProject のテスト環境改
+# AppModernProject
 
-テスト編集
-テストのための編集
+## こちらは AppModernizationClub の研修用リモートレポジトリです。
