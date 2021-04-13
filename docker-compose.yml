@@ -9,14 +9,19 @@ services:
     build: ./php/
     container_name: php2-container
 
+  php3:
+    build: ./php/
+    container_name: php3-container
+
   nginx:
     image: nginx
     container_name: web-container
     ports:
       - 8081:80
 
+
   db:
-    image: mysql:5.7
+    image: mysql:5.8
     container_name: db-container
     environment:
       MYSQL_ROOT_PASSWORD: root
@@ -34,3 +39,4 @@ services:
       - PMA_HOST=db-container
     links:
       - db
+
