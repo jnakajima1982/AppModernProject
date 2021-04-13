@@ -9,6 +9,10 @@ services:
     build: ./php/
     container_name: php2-container
 
+  php3:
+    build: ./php/
+    container_name: php3-container
+
   nginx:
     image: nginx
     container_name: web-container
@@ -34,3 +38,4 @@ services:
       - PMA_HOST=db-container
     links:
       - db
+
