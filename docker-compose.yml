@@ -9,7 +9,11 @@ services:
     build: ./php/
     container_name: php2-container
 
-  nginx:
+  php1:
+    image: php:7.4-apache
+    container_name: php3-container
+ 
+    nginx:
     image: nginx
     container_name: web-container
     ports:
