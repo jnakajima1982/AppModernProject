@@ -17,7 +17,8 @@ services:
     image: nginx
     container_name: web-container
     ports:
-      - 9088:80
+      - 8081:80
+
 
   db:
     image: mysql:5.8
