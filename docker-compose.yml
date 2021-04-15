@@ -9,9 +9,9 @@ services:
     build: ./php/
     container_name: php2-container
 
-  php1:
+  php4:
     image: php:7.4-apache
-    container_name: php3-container
+    container_name: php4-container
  
     nginx:
     image: nginx
