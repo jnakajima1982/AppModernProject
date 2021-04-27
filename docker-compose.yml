@@ -26,11 +26,15 @@ services:
       TZ: "Asia/Tokyo"
     command: mysqld --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
 
-  phpmyadmin:
+ phpmyadmin:
     image: phpmyadmin/phpmyadmin
     container_name: pma-container
     environment:
       - PMA_ARBITRARY=1
       - PMA_HOST=db-container
+      - PMA_USER=test
+      - PMA_PASSWORD=Vmware1!
     links:
       - db
+    ports:
+      - '8090:80'
